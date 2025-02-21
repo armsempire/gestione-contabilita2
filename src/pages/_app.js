@@ -1,6 +1,9 @@
-// pages/_app.js
-import '../styles/globals.css' // Importa gli stili globali
+// src/pages/_app.js
+import '../styles/globals.css'; // Assicurati che il percorso sia corretto
+import 'tailwindcss/tailwind.css'; // Se stai usando TailwindCSS
 
-export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />
+function MyApp({ Component, pageProps }) {
+  return <Component {...pageProps} />;
 }
+
+export default MyApp;
